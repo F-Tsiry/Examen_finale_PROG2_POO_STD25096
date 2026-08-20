@@ -34,8 +34,9 @@ dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getVa
 
 ...
 
-Dans database @Value("${db.url}")
-private String url;
+Dans database 
+    @Value("${db.url}")
+    private String url;
 
     @Value("${db.user}")
     private String user;
