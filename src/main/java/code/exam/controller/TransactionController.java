@@ -39,7 +39,7 @@ public class TransactionController {
     /**
      * POST /transaction
      */
-    @PostMapping("/transaction")
+    @PostMapping("/transactions")
     public ResponseEntity<TransactionResponse> createTransaction(
             @RequestBody CreateTransactionRequest request) {
 

@@ -31,11 +31,9 @@ public class AccountController {
     }
 
     /**
-     * GET /account/{id}/balance
-     * Kept singular "account" here to match your original endpoint spec
-     * (note the inconsistency with the plural "/accounts/{id}/transactions" above).
+     * GET /accounts/{id}/balance
      */
-    @GetMapping("/account/{id}/balance")
+    @GetMapping("/accounts/{id}/balance")
     public ResponseEntity<BalanceResponse> getAccountBalance(@PathVariable("id") String id) {
         var balance = transactionService.getBalance(id);
 
