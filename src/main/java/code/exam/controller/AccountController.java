@@ -33,7 +33,7 @@ public class AccountController {
     /**
      * GET /accounts/{id}/balance
      */
-    @GetMapping("/accounts/{id}/balance")
+    @GetMapping("/account/{id}/balance")
     public ResponseEntity<BalanceResponse> getAccountBalance(@PathVariable("id") String id) {
         var balance = transactionService.getBalance(id);
 
