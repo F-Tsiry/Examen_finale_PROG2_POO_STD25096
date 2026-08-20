@@ -20,7 +20,7 @@ db.url=${DB_URL:jdbc:postgresql://localhost:5432/ma_base}
 db.user=${DB_USER}
 db.password=${DB_PASSWORD}
 
-Dans Application.java on ajoute ces lignes pour ex
+Dans Application.java on ajoute ces lignes pour lire les donné avant compilation
 //Application.java:
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
